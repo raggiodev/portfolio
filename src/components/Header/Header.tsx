@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface Header {
+interface NavBar {
   clickLogo: () => void;
 }
 
-const Header: React.FC<Header> = ({ clickLogo }) => {
+const Header: React.FC<NavBar> = ({ clickLogo }) => {
   return (
     <header>
       <div onClick={clickLogo}>JoeTheorium</div>
