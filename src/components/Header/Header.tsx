@@ -15,6 +15,7 @@ const Header: React.FC<NavBar> = ({ clickLogo }) => {
         <button>Projects</button>
         <button>Blog</button>
         <button>Contact</button>
+        <button>Resume</button>
       </nav>
     </header>
   );
