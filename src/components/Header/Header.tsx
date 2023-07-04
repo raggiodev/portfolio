@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 
 interface NavBar {
   clickLogo: () => void;
@@ -9,8 +10,8 @@ const Header: React.FC<NavBar> = ({ clickLogo }) => {
     <header>
       <div onClick={clickLogo}>JoeTheorium</div>
       <nav>
-        <button>Home</button>
-        <button>About me</button>
+        <button>About</button>
+        <button>Experience</button>
         <button>Skills</button>
         <button>Projects</button>
         <button>Blog</button>
