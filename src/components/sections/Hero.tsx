@@ -27,7 +27,9 @@ const Hero: React.FC = () => {
 
   return (
     <section>
-      
+      {items.map((item, i) => (
+        <div key={i}>{item}</div>
+      ))}
     </section>
   );
 };
