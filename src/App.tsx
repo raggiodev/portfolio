@@ -1,15 +1,10 @@
 import React from 'react';
-import Header from './components/Header/Header';
+import Home from './pages/Home';
 
 const App: React.FC = () => {
-  const handleClickLogo = () => {
-    //
-  };
-
   return (
     <div>
-      <Header clickLogo={handleClickLogo} />
-      { }
+      <Home />
     </div>
   );
 };

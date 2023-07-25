@@ -1,9 +1,13 @@
-import React from 'react'
+// components/About.tsx
+import React from 'react';
 
-const About = () => {
+const About: React.FC = () => {
   return (
-    <div>About</div>
-  )
-}
+    <section id="about">
+      <h1>About</h1>
+      <p>About</p>
+    </section>
+  );
+};
 
 export default About;
