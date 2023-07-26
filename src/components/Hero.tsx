@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   const four = (
     <>
       <p>
-        I’m a software lorem ipsum y tal y cual.
+        I'm a software lorem ipsum y tal y cual.
       </p>
     </>
   );
