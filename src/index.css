@@ -1,19 +1,20 @@
 @font-face {
-  font-family: "Inter";
-  src: url("/public/fonts/Inter-Regular.ttf") format("ttf"),
-    url("/public/fonts/Inter-SemiBold.ttf") format("ttf"),
-    url("/public/fonts/Inter-Bold.ttf") format("ttf"),
-    url("/public/fonts/Inter-ExtraBold.ttf") format("ttf");
+  font-family: 'Inter';
+  src: url('../public/fonts/Inter-ExtraBold.ttf') format('ttf'),
+      url('../public/fonts/Inter-Bold.ttf') format('ttf'),
+      url('../public/fonts/Inter-SemiBold.ttf') format('ttf'),
+      url('../public/fonts/Inter-Regular.ttf') format('ttf');
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Inter', sans-serif;
 }
 
-:root {
+:root{
   /*LIGHT*/
   --light-bg-color: #fafafa;
   --light-bg-secondary-color: #dadada;
@@ -23,80 +24,77 @@
   --dark-bg-secondary-color: #333;
   --dark-text-color: #fafafa;
   /*COLORS*/
-  --primary-color: #fe53bb;
-  --secondary-color: #08f7fe;
-  --terthiary-color: #09fbd3;
-  --bg-color: var(--dark-bg-seconday-color);
+  --primary-color: #FE53BB;
+  --secondary-color: #08F7FE;
+  --terthiary-color: #09FBD3;
+  --bg-color: var(--dark-bg-color);
+  --bg-secondary-color: var(--dark-bg-secondary-color);
   --text-color: var(--dark-text-color);
+  /* --bg-color: var(--light-bg-color);
+  --bg-secondary-color: var(--light-bg-secondary-color);
+  --text-color: var(--light-text-color); */
 }
 
 /* SELECTION*/
-::selection {
+*::selection{
   background-color: var(--text-color);
   color: var(--bg-color);
 }
 
 /*SCROLLBAR*/
-::-webkit-scrollbar {
-  width: 0.7em;
+::-webkit-scrollbar{
+  width: .7em;
 }
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
   background-color: var(--bg-color);
 }
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    180deg,
-    var(--bg-color),
-    var(--bg-secondary-color) 20%,
-    var(--bg-secondary-color) 80%,
-    var(--bg-color)
-  );
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(180deg, var(--bg-color),var(--bg-secondary-color) 20%, var(--bg-secondary-color) 80%, var(--bg-color));
   border-radius: 1.25em;
 }
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover{
   background: var(--bg-secondary-color);
 }
-::-webkit-scrollbar-thumb:active {
+::-webkit-scrollbar-thumb:active{
   background: var(--bg-secondary-color);
   border-top: 2px solid var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
 
-a {
+a{
   text-decoration: none;
-  color: var(--text-color);
-  transition: 0.5s ease;
-  position: relative;
-  font-size: larger;
 }
 
-a:hover {
+.link{
+  color: var(--text-color);
+  transition: .5s ease;
+  position: relative;
+  font-size:larger;
+  font-weight: 400;
+}
+.link:hover{
   color: var(--primary-color);
 }
-
-a::before {
+.link::before{
   content: "";
   position: absolute;
   width: 0;
-  height: 0.1em;
+  height: .1em;
   bottom: 0;
   background: var(--primary-color);
   transition: 1s ease;
 }
-
-a:hover::before {
+.link:hover::before{
   width: 100%;
 }
 
-ul {
+ul{
   list-style: none;
 }
 
-body {
-  min-height: 100vh;
-  max-width: calc(100vw-0.7em);
+body{
+  min-height: 150vh;
+  max-width: calc(100vw-.7em);
   background: var(--bg-color);
   color: var(--text-color);
-  position: relative;
-  transition: 1s ease;
 }
