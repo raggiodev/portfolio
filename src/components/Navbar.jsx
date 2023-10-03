@@ -5,25 +5,22 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
-          <NavLink className='link' to='/home#'>Home</NavLink>
+          <NavLink className='link' to='/#about'>About</NavLink>
         </li>
         <li>
-          <NavLink className='link' to='/home#about'>About</NavLink>
+          <NavLink className='link' to='/#experience'>Experience</NavLink>
         </li>
         <li>
-          <NavLink className='link' to='/home#experience'>Experience</NavLink>
+          <NavLink className='link' to='/#skills'>Skills</NavLink>
         </li>
         <li>
-          <NavLink className='link' to='/home#skills'>Skills</NavLink>
+          <NavLink className='link' to='/#education'>Education</NavLink>
         </li>
         <li>
-          <NavLink className='link' to='/home#education'>Education</NavLink>
+          <NavLink className='link' to='/#projects'>Projects</NavLink>
         </li>
         <li>
-          <NavLink className='link' to='/home#projects'>Projects</NavLink>
-        </li>
-        <li>
-          <NavLink className='link' to='/home#contact'>Contact</NavLink>
+          <NavLink className='link' to='/#contact'>Contact</NavLink>
         </li>
       </ul>
     </nav>

@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       <Link to='/'>
         <img src="" alt="" />
-        <h3>Fernando Andres Raggio</h3>
+        <h4>JoeTheorium</h4>
       </Link>
       <Navbar />
     </header>
