@@ -1,16 +1,16 @@
-import {Link} from "react-router-dom";
-import Navbar from "./Navbar";
+import { Link } from "react-router-dom"
+import Navbar from "./Navbar"
 
 const Header = () => {
-  return (
-    <header>
-      <Link to='/'>
-        <img src="" alt="" />
-        <h4>JoeTheorium</h4>
-      </Link>
-      <Navbar />
-    </header>
-  )
+    return (
+        <header>
+            <Link to='/' className='logo'>
+                <h1 className='favicon'>S</h1>
+                <h4>JoeTheorium</h4>
+            </Link>
+            <Navbar/>
+        </header>
+    )
 }
 
-export default Header;
+export default Header
