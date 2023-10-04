@@ -66,6 +66,13 @@ a{
 ul{
   list-style: none;
 }
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 body{
   min-height: 100vh;
   max-width: calc(100vw-.7em);
@@ -139,7 +146,7 @@ header{
   margin-bottom: .2em;
 }
 .favicon::after{
-  content: 'S';
+  content: 'JT';
   position: absolute;
   bottom: 0;
   left: 0;

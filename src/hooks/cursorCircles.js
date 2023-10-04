@@ -27,7 +27,6 @@ const useCursorCircles = (numberOfCircles) => {
                 y: clientY,
                 color: '#000000'+(100-i)
             }
-
             const nextCircle = newCircles[i + 1] || newCircles[0];
             clientX += (nextCircle.x - clientX) * 0.5;
             clientY += (nextCircle.y - clientY) * 0.5;
