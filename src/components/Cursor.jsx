@@ -1,22 +1,27 @@
-import useCursorCircles from "../hooks/cursorCircles";
+import useCursorCircles from '../hooks/cursorCircles';
 
 const Cursor = () => {
+  const numberOfCircles = 30;
+  const circles = useCursorCircles(numberOfCircles);
 
-    const numberOfCircles = 50
-    const circles = useCursorCircles(numberOfCircles);
-
-    return (
-        <>
-            {circles.map((circle, indexMap) => {return <div key={indexMap} 
+  return (
+    <>
+      {circles.map((circle, indexMap) => {
+        return (
+          <div
+            key={indexMap}
             style={{
-                left: circle.left,
-                top: circle.top,
-                transform: `scale(${circle.scale})`,
-                background: circle.color
+              left: circle.left,
+              top: circle.top,
+              transform: `scale(${circle.scale})`,
+              background: circle.color,
             }}
-            className="cursorCircle"/>})}
-        </>
-    )
-}
+            className="cursorCircle"
+          />
+        );
+      })}
+    </>
+  );
+};
 
-export default Cursor
+export default Cursor;
