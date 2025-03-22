@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <header>
       <a to='/' className='logo'>
-        <h1 className='favicon'>JT</h1>
-        <h4>JoeTheorium</h4>
+        <h1 className='favicon'></h1>
+        <h4>raggiodev</h4>
       </a>
       <Navbar/>
     </header>

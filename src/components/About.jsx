@@ -18,7 +18,7 @@ const About = () => {
           delay: 0.8,
         }}
       }}
-      >Hi, my name is</motion.h4>
+      >Hi! My name is</motion.h4>
       <motion.h1
       initial={{
         opacity: 0,
@@ -33,7 +33,7 @@ const About = () => {
           delay: 1.2,
         }}
       }}
-      >Fernando Andres Raggio</motion.h1>
+      >Raggio Fernando Andres</motion.h1>
       <motion.h2
       initial={{
         opacity: 0,
