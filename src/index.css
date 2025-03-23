@@ -308,3 +308,26 @@ main{
 footer{
     min-height: 10vh;
 }
+/*THEMES (DARK / LIGHT)*/
+:root[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
+
+:root[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #121212;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

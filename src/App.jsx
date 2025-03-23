@@ -1,28 +1,33 @@
-import {RouterProvider, createBrowserRouter} from 'react-router-dom';
-import Home from './pages/Home';
-import MainLayout from './layouts/MainLayout';
-import Model3D from './layouts/Model3D';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import { ThemeToggle } from "./components/ThemeToggle";
+import Home from "./pages/Home";
+import MainLayout from "./layouts/MainLayout";
+import Model3D from "./layouts/Model3D";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <MainLayout/>,
+    path: "/",
+    element: <MainLayout />,
     children: [
       {
-        path: '/',
-        element: <Home/>
-      }
-    ]
+        path: "/",
+        element: <Home />,
+      },
+    ],
   },
   {
-    path: '/3D',
-    element: <Model3D/>
-  }
-])
+    path: "/3D",
+    element: <Model3D />,
+  },
+]);
 
 function App() {
   return (
-    <RouterProvider router={router}/>
+    <ThemeProvider>
+      <ThemeToggle />
+      <RouterProvider router={router} />
+    </ThemeProvider>
   );
 }
 
