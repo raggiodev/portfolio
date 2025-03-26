@@ -1,57 +1,51 @@
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import Cursor from "./Cursor";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.article id='about' whileInView={"visible"}>
       <motion.h4
-      initial={{
-        opacity: 0,
-        x: -50,
-      }}
-      variants={{
-        visible: {
-        opacity: 1,
-        x: 0,
-        transition:{
-          duration: 1,
-          delay: 0.8,
+        initial={{ opacity: 0, x: -50 }}
+        variants={{
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: { duration: 1, delay: 0.8 }
+          }
         }}
-      }}
-      >Hi! My name is</motion.h4>
+      >
+        {t("hi")}
+      </motion.h4>
       <motion.h1
-      initial={{
-        opacity: 0,
-        x: -50,
-      }}
-      variants={{
-        visible: {
-        opacity: 1,
-        x: 0,
-        transition:{
-          duration: 1,
-          delay: 1.2,
+        initial={{ opacity: 0, x: -50 }}
+        variants={{
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: { duration: 1, delay: 1.2 }
+          }
         }}
-      }}
-      >Raggio Fernando Andres</motion.h1>
+      >
+        Raggio Fernando Andres
+      </motion.h1>
       <motion.h2
-      initial={{
-        opacity: 0,
-        x: -50,
-      }}
-      variants={{
-        visible: {
-        opacity: 1,
-        x: 0,
-        transition:{
-          duration: 1,
-          delay: 1.6,
+        initial={{ opacity: 0, x: -50 }}
+        variants={{
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: { duration: 1, delay: 1.6 }
+          }
         }}
-      }}
-      >Full Stack Developer</motion.h2>
-      <Cursor/>
+      >
+        {t("full_stack")}
+      </motion.h2>
+      <Cursor />
     </motion.article>
-  )
-}
+  );
+};
 
 export default About;
