@@ -1,43 +1,36 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+
+const navbarVariant = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
+
+const linkVariant = {
+  hidden: { opacity: 0, x: -10 },
+  visible: (i) => ({
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6, delay: i * 0.1 },
+  }),
+};
 
 const Navbar = () => {
   const { t } = useTranslation();
+  const links = ["about", "skills", "experience", "education", "projects", "contact"];
 
   return (
-    <nav>
+    <motion.nav variants={navbarVariant} initial="hidden" animate="visible">
       <ul>
-        <li>
-          <a className="link" href="/#about">
-            {t("about")}
-          </a>
-        </li>
-        <li>
-          <a className="link" href="/#skills">
-            {t("skills")}
-          </a>
-        </li>
-        <li>
-          <a className="link" href="/#experience">
-            {t("experience")}
-          </a>
-        </li>
-        <li>
-          <a className="link" href="/#education">
-            {t("education")}
-          </a>
-        </li>
-        <li>
-          <a className="link" href="/#projects">
-            {t("projects")}
-          </a>
-        </li>
-        <li>
-          <a className="link" href="/#contact">
-            {t("contact")}
-          </a>
-        </li>
+        {links.map((link, i) => (
+          <motion.li key={link} custom={i} variants={linkVariant}>
+            <a className="link" href={`/#${link}`}>
+              {t(link)}
+            </a>
+          </motion.li>
+        ))}
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 

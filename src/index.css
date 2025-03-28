@@ -81,6 +81,11 @@ ul{
 body{
     background: var(--bg-color);
     overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    transition: background 0.3s, color 0.3s;
 }
 .body{
     min-height: 100vh;
@@ -314,21 +319,27 @@ footer{
     --bg-color: #121212;
     --text-color: #ffffff;
 }
-
 :root[data-theme="light"] {
     --bg-color: #ffffff;
     --text-color: #121212;
 }
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background 0.3s, color 0.3s;
-}
-
 .theme-toggle {
     background: transparent;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+button:active {
+    transform: scale(0.95);
 }
