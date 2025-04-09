@@ -1,10 +1,6 @@
 {
   "greeting": "¡Hola, bienvenido a mi portafolio!",
   "about": "Sobre mí",
-  "experience": "Experiencia",
-  "education": "Educación",
-  "projects": "Proyectos",
-  "contact": "Contacto",
   "hi": "¡Hola! Mi nombre es",
   "full_stack": "Desarrollador Full Stack",
   "skills": "Habilidades",
@@ -13,5 +9,37 @@
   "javascript": "JavaScript",
   "react": "React",
   "node": "Node.js",
-  "git": "Git"
+  "git": "Git",
+  "experience": "Experiencia",
+  "Meraki - Marketing y Comunicación": "Meraki - Marketing & Communication",
+  "Co-Fundador & Desarrollador Web": "Co-Fundador y Director de Tecnologías",
+  "merakiDescription": "Co-fundé una agencia creativa enfocada en el crecimiento de marcas y estrategias sostenibles. Me encargo del desarrollo web y operaciones técnicas.",
+  "Despachos Saintotte": "Despachos Saintotte",
+  "Asistente Técnico en Comercio Internacional": "Asistente técnico y contable en comercio internacional",
+  "saintotteDescription": "Brindo soporte en operaciones logísticas y aduaneras para exportación e importación.",
+  "Desarrollador Web Freelance": "Desarrollador Web Freelancer",
+  "Frontend Developer": "Desarrollo Web Frontend",
+  "freelanceDescription": "Diseño y desarrollo sitios web para emprendedores, marcas personales y pequeños negocios.",
+  "projects": "Proyectos",
+  "viewProject": "Ver Proyecto",
+  "projectDescriptions": {
+    "meraki": "Sitio web institucional para una agencia de marketing. Diseño moderno, responsive y orientado a la conversión.",
+    "turim": "Ticketera digital para eventos con sistema de membresía y pagos. Desarrollado en WordPress.",
+    "juegoAnuncios": "Juego móvil experimental basado en dinámicas virales. En etapa de desarrollo con ilustraciones personalizadas."
+  },
+  "education": "Educación",
+  "educationTitles": {
+    "certWeb": "Certificación en Desarrollo Web",
+    "certCyber": "Certificación en Ciberseguridad (en curso)",
+    "tecComex": "Técnico Superior en Comercio Internacional",
+    "tecInformatica": "Técnico Superior en Informática",
+    "secundario": "Bachiller Técnico con Orientación en Informática"
+  },
+  "contact": "Contacto",
+  "contactText": {
+    "p1": "Me llamo Fernando Andrés Raggio, pero mis amigos me llaman Fer. Empecé en la programación con Arduino cuando tenía 14 años. Hoy trabajo en proyectos desafiantes junto a equipos de desarrollo.",
+    "p2": "Algunos de mis logros incluyen colaborar con empresas brindando clases, crear proyectos exitosos para clientes, recibir estrellas en GitHub, y que Midudev me aceptara un fork.",
+    "p3": "Como desarrollador, mi objetivo es estar presente donde se produzcan avances reales, y contribuir al crecimiento de una gran empresa impulsando mejoras a gran escala."
+  },
+  "contactAlt": "Una foto mía, con un marco bonito, ligeramente inclinada hacia la derecha."
 }

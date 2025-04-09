@@ -1,14 +1,34 @@
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
-      <contact>
-        <div>
-          <p>Me llamo Fernando Andres Raggio pero mis amigos me llaman Fer. Empecé en la programación con Arduino, tenía 14 años. Actualmente estoy trabajando con equipos de desarrollo.</p>
-          <p>Algunos de mis éxitos incluyen colaborar con empresas para dar clases; mis proyectos exitosos para clientes; los que tuvieron muchas estrellas en GitHub; que Midudev me acepte un fork; etc.</p>
-          <p>Como desarrollador, mi objetivo es estar y ayudar a lograr avances en una gran empresa para impulsar mejoras a gran escala.</p>
-          <img src="" alt="Una foto mía a la derecha inclinada un poco a la derecha con un marquito lindo." />
+    <motion.section
+      id="contact"
+      className="section contact-section"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <h2 className="section-title">{t("contact")}</h2>
+      <div className="contact-container">
+        <div className="contact-text">
+          <p>{t("contactText.p1")}</p>
+          <p>{t("contactText.p2")}</p>
+          <p>{t("contactText.p3")}</p>
         </div>
-      </contact>
-  )
-}
+        <div className="contact-image">
+          <img
+            src="/images/fer-profile.jpg"
+            alt={t("contactAlt")}
+            className="profile-img"
+          />
+        </div>
+      </div>
+    </motion.section>
+  );
+};
 
 export default Contact;

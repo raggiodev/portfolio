@@ -1,10 +1,6 @@
 {
   "greeting": "Hello, welcome to my portfolio!",
   "about": "About Me",
-  "experience": "Experience",
-  "education": "Education",
-  "projects": "Projects",
-  "contact": "Contact",
   "hi": "Hi! My name is",
   "full_stack": "Full Stack Developer",
   "skills": "Skills",
@@ -13,5 +9,37 @@
   "javascript": "JavaScript",
   "react": "React",
   "node": "Node.js",
-  "git": "Git"
+  "git": "Git",
+  "experience": "Experience",
+  "Meraki - Marketing y Comunicación": "Meraki - Marketing & Communication",
+  "Co-Fundador & Desarrollador Web": "Co-Founder & Web Developer",
+  "merakiDescription": "I co-founded a creative agency focused on brand growth and sustainable strategies. I lead all web development and technical operations.",
+  "Despachos Saintotte": "Despachos Saintotte",
+  "Asistente Técnico en Comercio Internacional": "Technical Assistant in International Trade",
+  "saintotteDescription": "I support international logistics and customs operations for export and import.",
+  "Desarrollador Web Freelance": "Freelance Web Developer",
+  "Frontend Developer": "Frontend Developer",
+  "freelanceDescription": "I design and develop websites for small businesses, entrepreneurs, and personal brands.",
+  "projects": "Projects",
+  "viewProject": "View Project",
+  "projectDescriptions": {
+    "meraki": "Institutional website for a marketing agency. Modern, responsive and conversion-focused design.",
+    "turim": "Event ticketing platform with membership and payment system. Built with WordPress.",
+    "juegoAnuncios": "Experimental mobile game based on viral ad mechanics. Currently in development with custom illustrations."
+  },
+  "education": "Education",
+  "educationTitles": {
+    "certWeb": "Web Development Certification",
+    "certCyber": "Cybersecurity Certification (in progress)",
+    "tecComex": "Technical Degree in International Trade",
+    "tecInformatica": "Technical Degree in Computer Science",
+    "secundario": "Technical High School Diploma in IT"
+  },
+  "contact": "Contact",
+  "contactText": {
+    "p1": "My name is Fernando Andrés Raggio, but my friends call me Fer. I started programming with Arduino when I was 14. Today, I work on challenging projects with development teams.",
+    "p2": "Some of my achievements include teaching with companies, delivering successful client projects, earning stars on GitHub, and having a fork accepted by Midudev.",
+    "p3": "As a developer, my goal is to be where real progress happens and help drive large-scale improvements within a great company."
+  },
+  "contactAlt": "A photo of me, with a nice frame, slightly tilted to the right."
 }
