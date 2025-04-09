@@ -17,7 +17,7 @@ const linkVariant = {
 
 const Navbar = () => {
   const { t } = useTranslation();
-  const links = ["about", "experience", "skills", "education", "projects", "contact"];
+  const links = ["about", "experience", "projects", "skills", "education", "contact"];
 
   return (
     <motion.nav variants={navbarVariant} initial="hidden" animate="visible">
