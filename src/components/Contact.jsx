@@ -21,7 +21,7 @@ const Contact = () => {
         </div>
         <div className="contact-image">
           <img
-            src="/images/fer-profile.jpg"
+            src="../Yo (500x600).jpg"
             alt={t("contactAlt")}
             className="profile-img"
           />
